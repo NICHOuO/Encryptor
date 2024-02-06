@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title"><img class="icon" src="images/logo.png"></h1>
+    </header>
+    <main>
+        
+            <form>
+            <div class="text">
+                <textarea cols="60"rows="10 " id="cuadro" class="inputText"required placeholder="Ingrese su texto aquí" ></textarea>
+            </div>  
+            <div class="rectangle">
+                <img class="imgOff" id="ImagenOff"src="images/disconnection.png">
+                <p class="textAdvice" id="TextNomessageOff">Ningún mensaje fue encontrado</p>
+                <p class="textMessage"id="TextWishOff">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <p class="resultText" id="ShowText"></p>
+                <button type="button" id="Copy" onclick="copyText(),buttonDisappear()" class="CopyButton">Copiar</button>
+            </div>    
+            <div class="buttons">
+                <fieldset ></section>
+                    <label for="mensaje">⚠ Solo letras minúsculas y sin acentos</label>
+                    <button type="button" id="mensaje"  onclick="getText(),changeTextWithHTML(),imageTextDisappear()" class="EncryptorButton">Encriptar</button>
+                    <button type="button" onclick="decryptor(),changeTextWithHTML2(),buttonAppear() "  class="DecryptorButton">Desencriptar</button>
+                
+                </fieldset> 
+            </div>
+            
+           
+            </form>
+      
+    </main>
+
+        
+
+    <footer>
+
+    </footer>
+
+</body>
+    <script src="encryp.js"></script>
+    <script src="copy.js"></script>
+    <script src="Decryp.js"></script>
+</html>
+
