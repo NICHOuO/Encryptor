@@ -52,10 +52,12 @@ function imageTextDisappear(){
     let textNoneElement=document.getElementById("TextNomessageOff");
     let textWishElement=document.getElementById("TextWishOff");
     let CopyButtonElement=document.getElementById("Copy");
+    let labelElement = document.getElementById("ShowText");
     textWishElement.style.display='none';
     textNoneElement.style.display='none';
     imageElement.style.display='none';
     CopyButtonElement.style.display='block';
+    labelElement.style.display='block';
     
 }
 

@@ -15,20 +15,21 @@
         
             <form>
             <div class="text">
-                <textarea cols="60"rows="10 " id="cuadro" class="inputText"required placeholder="Ingrese su texto aquí" ></textarea>
+                <textarea cols="60"rows="10" id="cuadro" class="inputText"required placeholder="Ingrese su texto aquí" ></textarea>
             </div>  
             <div class="rectangle">
                 <img class="imgOff" id="ImagenOff"src="images/disconnection.png">
                 <p class="textAdvice" id="TextNomessageOff">Ningún mensaje fue encontrado</p>
                 <p class="textMessage"id="TextWishOff">Ingresa el texto que deseas encriptar o desencriptar</p>
-                <p class="resultText" id="ShowText"></p>
-                <button type="button" id="Copy" onclick="copyText(),buttonDisappear()" class="CopyButton">Copiar</button>
+                
+                <textarea cols="20"rows="15" class="resultText" id="ShowText" ></textarea>
+                <button type="button" id="Copy" onclick="copyText(),buttonDisappear(),ableButton() " class="CopyButton">Copiar</button>
             </div>    
             <div class="buttons">
                 <fieldset ></section>
                     <label for="mensaje">⚠ Solo letras minúsculas y sin acentos</label>
-                    <button type="button" id="mensaje"  onclick="getText(),changeTextWithHTML(),imageTextDisappear()" class="EncryptorButton">Encriptar</button>
-                    <button type="button" onclick="decryptor(),changeTextWithHTML2(),buttonAppear() "  class="DecryptorButton">Desencriptar</button>
+                    <button type="button" id="mensaje"  onclick="getText(),changeTextWithHTML(),imageTextDisappear(),disabledButtonDecryp()" class="EncryptorButton">Encriptar</button>
+                    <button type="button" id="DecrypMess"onclick="decryptor(),changeTextWithHTML2(),buttonAppear(), disabledButtonEncryp() "  class="DecryptorButton">Desencriptar</button>
                 
                 </fieldset> 
             </div>
@@ -48,5 +49,6 @@
     <script src="encryp.js"></script>
     <script src="copy.js"></script>
     <script src="Decryp.js"></script>
+    <script src="ableDisable.js"></script>
 </html>
 
